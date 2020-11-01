@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome from Myanmar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <style>
+* {
+  box-sizing: border-box;
+}
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left middle middle middle middle right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 550px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+</style>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <div style="text-align:center">
+          <h1>Beautiful Myanmar</h1>
+          <button type="button" id="primary" class="btn btn-primary">Yangon</button>
+          <button type="button" id="success" class="btn btn-success">Mandalay</button>
+          <button type="button" id="info" class="btn btn-info">Bagan</button>
+          <button type="button" id="warning" class="btn btn-warning">Taunggyi</button>
+          <button type="button" id="danger" class="btn btn-danger">Ngapali</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+
+
+  <div class="left"></div>
+  <div class="middle" id="myDiv" style="background-image:url('https://i.ytimg.com/vi/DX48mJjL7oU/maxresdefault.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+  <div class="right"></div>
+
+  <div class="footer">
+    <p>Travel with us</p>
+  </div>
+</div>
+
+  </body>
+
+  <script>
+    var buttons = document.querySelectorAll('.btn');
+    var html = document.querySelector('html');
+    var photo = document.getElementById("myDiv");
+
+    buttons.forEach(function(button){
+      button.addEventListener('click',function(e){
+        // console.log(e.target.id);
+        if (e.target.id == 'primary') {
+          html.style.backgroundColor = '#007bff';
+          photo.style.backgroundImage = "url('https://ak.picdn.net/shutterstock/videos/3790040/thumb/1.jpg')";
+        }else if (e.target.id == 'success') {
+          html.style.backgroundColor = '#28a745';
+          photo.style.backgroundImage = "url('https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1612,h_1074,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/v8ubs4dgx6qwm0mcjngw/MandalayHillEveningWalkingandSunsetViewTour.webp')";
+        }else if (e.target.id == 'info') {
+          html.style.backgroundColor = '#18a2b8';
+          photo.style.backgroundImage = "url('https://wallpaperaccess.com/full/900327.jpg')";
+        }else if (e.target.id == 'warning') {
+          html.style.backgroundColor = '#ffc108';
+          photo.style.backgroundImage = "url('https://myanmartours.com/images/Myanmar-Photos/content/Taunggyi_Tazaungdaing_festival_02_16f95.jpg')";
+        }else if (e.target.id == 'danger') {
+          html.style.backgroundColor = '#dc3645';
+          photo.style.backgroundImage = "url('https://amataresort.com/wp-content/uploads/2017/08/Amata-Ngapali-Website1-1.jpg')";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

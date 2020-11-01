@@ -1,0 +1,43 @@
+html{
+  background-color: #8e8e8e;
+}
+
+body{
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #718c71;
+  /* background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  border: 5px solid grey;
+  border-color: grey;
+  padding: 5px 10px 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.paragraph{
+  color: #c60cf5;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+h1{
+  text-align: center;
+  text-transform: capitalize;
+  /* float: right; */
+  text-shadow: 5px 5px 5px green;
+}
+p em{
+  color:red;
+}
+a{
+  text-decoration: none;
+}
+.p3{
+  text-decoration: line-through;
+}
+img[src] {
+  width: 100px;
+}

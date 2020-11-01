@@ -1,0 +1,85 @@
+.box{
+	margin-left: 30px auto;
+	padding: 20px 15px;
+	border: 1px solid cyan;
+	text-align: center;
+	/*background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;*/
+}
+h1{
+	color: orange;
+	font-weight: bold;
+}
+h2{
+	color: purple;
+}
+
+h3{
+	color: blue;
+}
+h5{
+	color: green;
+}
+
+/* ballon div */
+.balloon{
+	display: inline-block;
+	width: 50px;
+	height: 65px;
+	background-color: orange;
+	/*border: 1px solid orange;*/
+	border-radius: 100%;
+	margin-bottom: 5px;
+	border-left: 0.5px solid black;
+	border-bottom: 3px solid black;
+	margin-right: 10px;
+}
+.balloon span{
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background-color: white;
+	border-radius: 100%;
+	border-bottom: 2px solid white;
+	position: relative;
+	top: 12px;
+	left: 10px;
+}
+
+/*No ballon-div*/
+#noballon-div, #choosing{
+	display: none;
+}
+
+/*choosing*/
+#choosing a {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.restart{
+	width: 20px;
+	padding: 5px 6px;
+	padding-right: 9px!important;
+	font-size: 25px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.cancle{
+	width: 20px;
+	padding: 5px 6px;
+	font-size: 25px;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: 200ms;
+}
+
+.restart:hover, .cancle:hover{
+	background-color: black;
+	color: white;
+	border: 1px solid cyan;
+}

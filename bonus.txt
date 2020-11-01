@@ -1,0 +1,36 @@
+-week 1
+https://www.aprogrammer.blog/2020/04/14/to-become-web-developer/
+Need to study basic networking
+	        Data structure and Algorithm
+	         https://github.com/HlaingTinHtun/Data-Structure-Algorithm-In-Burmese
+	        Operating system
+	         https://github.com/HlaingTinHtun/Operating-System-For-Programmers
+
+-week 2
+must study linux comment for web hosting
+
+-week 3
+w3schools.com
+tutorialpoints.com
+mdns
+
+-week 4
+Udmey
+
+-week 5 -week 6
+study php function
+study sql
+nosql - mongoDb
+must wirte at least 5 project
+
+-week 7 
+OOP design pattern
+
+-week 8
+git cheet sheet
+
+
+
+
+ 
+

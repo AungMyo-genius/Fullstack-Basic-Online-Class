@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BG CHANGER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <div style="text-align:center">
+          <h1>Background Changer</h1>
+          <button type="button" id="primary" class="btn btn-primary">Primary</button>
+          <button type="button" id="success" class="btn btn-success">Success</button>
+          <button type="button" id="info" class="btn btn-info">Info</button>
+          <button type="button" id="warning" class="btn btn-warning">Warning</button>
+          <button type="button" id="danger" class="btn btn-danger">Danger</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var buttons = document.querySelectorAll('.btn');
+    var html = document.querySelector('html');
+
+    buttons.forEach(function(button){
+      button.addEventListener('click',function(e){
+        // console.log(e.target.id);
+        if (e.target.id === 'primary') {
+          html.style.backgroundColor = '#007bff';
+        }else if (e.target.id == 'success') {
+          html.style.backgroundColor = '#28a745';
+        }else if (e.target.id == 'info') {
+          html.style.backgroundColor = '#18a2b8';
+        }else if (e.target.id == 'warning') {
+          html.style.backgroundColor = '#ffc108';
+        }else if (e.target.id == 'danger') {
+          html.style.backgroundColor = '#dc3645';
+        }
+      });
+    });
+  </script>
+</html>
